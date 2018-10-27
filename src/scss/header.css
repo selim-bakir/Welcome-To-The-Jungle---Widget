@@ -6,35 +6,25 @@
   height: 40px;
   padding: 10px;
   color: white; }
-
-.logo-container {
-  display: flex;
-  align-items: center; }
-
-.logo {
-  height: 40px;
-  margin-right: 10px; }
-
-.header-controls {
-  display: flex; }
-
-.button {
-  width: 30px;
-  height: 30px;
-  background-color: #333;
-  border-radius: 50%;
-  text-align: center;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: ease all 0.2s; }
-
-.button:hover {
-  filter: brightness(115%); }
-
-.button i {
-  color: #eee;
-  line-height: 30px; }
-
-@media screen and (max-width: 768px) {
-  .title {
-    display: none; } }
+  .header .logo-container {
+    display: flex;
+    align-items: center; }
+    .header .logo-container img {
+      height: 40px;
+      margin-right: 10px; }
+  .header .header-controls {
+    display: flex; }
+    .header .header-controls .button {
+      width: 30px;
+      height: 30px;
+      background-color: #333;
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: ease all 0.2s; }
+      .header .header-controls .button i {
+        color: #eee;
+        line-height: 30px; }
+      .header .header-controls .button:hover {
+        filter: brightness(115%); }
