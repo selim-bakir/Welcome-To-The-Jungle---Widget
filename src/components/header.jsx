@@ -21,10 +21,10 @@ class Header extends Component {
 				</div>
 				<div className="header-controls">
 					<div className="button button-backward">
-						<i className=" fa fa-arrow-left"/>
+						<i className="fa fa-arrow-left"/>
 					</div>
 					<div className="button button-forward">
-						<i className=" fa fa-arrow-right"/>
+						<i className="fa fa-arrow-right"/>
 					</div>
 				</div>
 			</header>
