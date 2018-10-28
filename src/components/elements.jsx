@@ -12,7 +12,7 @@ class Elements extends Component {
 
   render() {
     return (
-      <div className={'elements elements-' + this.props.data.type} style={{width: this.props.width + '%', height: this.props.height + '%' }} data-type={this.props.data.type}>
+      <div className={'swiper-slide elements elements-' + this.props.data.type} style={{width: this.props.width + '%', height: this.props.height + '%' }} data-type={this.props.data.type}>
 				{
 					this.props.data.type === 'image' ? (<Image url={this.props.data.url} />) :
 					this.props.data.type === 'video' ? (<Video url={this.props.data.url} title={this.props.data.title} subtitle={this.props.data.subtitle} />) :
