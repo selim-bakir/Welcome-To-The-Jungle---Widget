@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 import ElementsList from './components/elementsList';
@@ -16,13 +17,20 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-          <div className="App-Wrapper">
-            <Header/>
-            <ElementsList data={data} />
-            <Footer/>
+
+      // <Router>
+        <div>
+          <div className="App">
+            {/* <Route path="/col=:column&row=:row" render={props => ( */}
+              <div className="App-Wrapper">
+              <Header/>
+              <ElementsList data={data} />
+              <Footer/>
+            </div>
+            {/* ) }/> */}
           </div>
-      </div>
+        </div>
+      // </Router>
     );
   }
 }

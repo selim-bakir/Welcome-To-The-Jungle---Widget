@@ -19,14 +19,6 @@ class Header extends Component {
 					<img src={logo} className="logo" alt="logo" />
 					<h1 className="title">Welcome to the Jungle</h1>
 				</div>
-				<div className="header-controls">
-					<div className="button button-backward">
-						<i className="fa fa-arrow-left"/>
-					</div>
-					<div className="button button-forward">
-						<i className="fa fa-arrow-right"/>
-					</div>
-				</div>
 			</header>
     );
   }

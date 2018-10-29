@@ -13,7 +13,13 @@ class ElementsList extends Component {
 			line: 2
 		};
   }
-
+//   componentDidMount() {
+//     this.setState({
+// 			col: this.props.match.params.column,
+// 			line: this.props.match.params.line
+// 		})
+//   }
+  
 	getElementWidth() {
 		return 100 / this.state.col
 	}
@@ -37,6 +43,13 @@ class ElementsList extends Component {
 			slidesPerColumn : 2,
 			speed : 1000,
 			slidesPerGroup : 3,
+			breakpoints: {
+				640: {
+				  slidesPerView: 1,
+				  slidesPerColumn : 1,
+				  slidesPerGroup : 1,
+				}
+			  }
 		}
 		
     return (
