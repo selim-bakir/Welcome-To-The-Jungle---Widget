@@ -1,10 +1,29 @@
-footer {
-	background-color: #222;
+.footer {
+	background-color: #1B1C20;
 	color: #fff;
 	padding: 10px;
     height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto;
     img {
         height: 30px;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.8rem;
+        &:hover{
+            color: #00c29a;
+            svg g{
+                fill: #00c29a;
+            }
+        }
+        span{
+            margin-right: 8px;
+            text-transform: uppercase;
+        }
     }
 }
 

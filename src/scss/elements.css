@@ -19,7 +19,7 @@
       height: 100%;
       position: relative;
       background-size: cover;
-      background-position: center;
+      background-position: center center;
       transition: ease all 0.2s; }
   .elements-image .zoom {
     position: absolute;
@@ -51,7 +51,8 @@
     height: 100%; }
     .elements-video .elements-video-container .elements-video-bg {
       height: 100%;
-      background-size: cover; }
+      background-size: cover;
+      background-position: center center; }
       .elements-video .elements-video-container .elements-video-bg:hover {
         transform: scale(1.1);
         transition: ease all 0.2s; }
@@ -67,29 +68,30 @@
     padding: 15px;
     height: 40px; }
     .elements-video .elements-video-caption .play {
-      background-color: #00C29A;
-      width: 40px;
-      height: 40px;
-      text-align: center;
+      width: 35px;
+      height: 35px;
+      background-color: #00c29a;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      margin-right: 0.8rem;
+      flex: 0 0 auto;
       border-radius: 50%;
-      cursor: pointer;
-      transition: ease 0.2s all; }
+      transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s; }
       .elements-video .elements-video-caption .play i {
         color: #fff;
         line-height: 40px; }
-      .elements-video .elements-video-caption .play:hover {
-        filter: brightness(115%);
-        transform: scale(1.1);
-        transition: ease 0.2s all; }
   .elements-video .elements-video-headline {
-    margin-left: 40px;
     color: #fff;
-    height: 100%; }
-    .elements-video .elements-video-headline .Headline-Title {
-      font-size: 16px;
-      font-family: sans-serif;
-      font-weight: bold;
-      display: block; }
+    height: 100%;
+    display: flex;
+    align-items: center; }
+    .elements-video .elements-video-headline .headline-title {
+      font-size: 14px !important; }
+    .elements-video .elements-video-headline .headline-subtitle {
+      font-size: 11px !important; }
 
 .elements-quote {
   background-color: #333; }

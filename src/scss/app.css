@@ -1,11 +1,6 @@
 .App {
   text-align: left;
   height: 100vh; }
-
-@font-face {
-  .App {
-    font-family: "hkcompakt";
-    src: url("../fonts/HKCompakt-Medium.woff") format("woff"); } }
   .App .App-Wrapper {
     width: 100%;
     height: 100%; }

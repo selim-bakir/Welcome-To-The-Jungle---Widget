@@ -23,6 +23,7 @@ class ElementsList extends Component {
 	}
 
   render() {
+		
 		const params = {
 			pagination: {
 				el: '.swiper-pagination',
@@ -36,9 +37,8 @@ class ElementsList extends Component {
 			slidesPerColumn : 2,
 			speed : 1000,
 			slidesPerGroup : 3,
-
-
-    }
+		}
+		
     return (
 			<Swiper {...params}>
 				{this.props.data.blocs.map((blocs, i) => {

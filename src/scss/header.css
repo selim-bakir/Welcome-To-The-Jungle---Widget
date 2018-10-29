@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #222;
+  background-color: #1B1C20;
   height: 40px;
   padding: 5px;
   color: white; }
@@ -11,7 +11,9 @@
     align-items: center; }
     .header .logo-container img {
       height: 40px;
-      margin-right: 10px; }
+      margin-right: 0.8rem; }
+    .header .logo-container .title {
+      font-size: 1.2rem; }
   .header .header-controls {
     display: flex; }
     .header .header-controls .button {

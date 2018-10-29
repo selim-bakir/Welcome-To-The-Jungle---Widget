@@ -17,7 +17,7 @@ class Header extends Component {
 			<header className="header">
 				<div className="logo-container">
 					<img src={logo} className="logo" alt="logo" />
-					<h1 className="title">Welcome to the jungle</h1>
+					<h1 className="title">Welcome to the Jungle</h1>
 				</div>
 				<div className="header-controls">
 					<div className="button button-backward">
