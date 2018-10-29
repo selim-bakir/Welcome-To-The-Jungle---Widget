@@ -7,9 +7,9 @@ class Header extends Component {
     super(props);
     this.state = {
 			col: 2,
-			line: 2
+			line: 2,
 		};
-
+		
   }
 
   render() {

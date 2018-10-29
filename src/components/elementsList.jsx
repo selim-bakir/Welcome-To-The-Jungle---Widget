@@ -3,6 +3,7 @@ import Swiper from 'react-id-swiper';
 import Elements from './elements';
 import '../scss/elementsList.css';
 import '../scss/elements.css';
+import '../scss/swiper.css';
 
 class ElementsList extends Component {
 	constructor(props) {
@@ -28,10 +29,15 @@ class ElementsList extends Component {
 				type: 'progressbar',
 			},
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '.button-forward',
+				prevEl: '.button-backward',
 			},
 			slidesPerView : 3,
+			slidesPerColumn : 2,
+			speed : 1000,
+			slidesPerGroup : 3,
+
+
     }
     return (
 			<Swiper {...params}>

@@ -6,7 +6,8 @@ class Video extends Component {
 
 	render() {
 		return (
-			<div className="elements-video-container" data-id={this.props.key} style={{ backgroundImage: 'url(' + this.props.url + ')'}}>
+			<div className="elements-video-container" data-id={this.props.key}>
+				<div className="elements-video-bg" style={{ backgroundImage: 'url(' + this.props.url + ')'}}></div>
 				<div className="elements-video-caption">
 					<div className="play">
 						<i className="fa fa-play"/>

@@ -2,7 +2,11 @@
 	background-color:#333;
 	flex: 0 0 auto;
 	cursor: pointer;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
+
 //BLOCS IMAGES
 .elements-image {
 	width: 100%;
@@ -20,11 +24,29 @@
 			background-position: center;
 			transition: ease all 0.2s;
 		}
-		&:hover{
-			.image{
-				transform: scale(1.1);
-				transition: ease all 0.2s;
-			}
+	}
+	.zoom{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		transform: scale3d(0, 0, 1);
+		width: 50px;
+		height: 50px;
+		background-color: rgb(0, 194, 154);
+		display: flex;
+		-webkit-box-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		justify-content: center;
+		z-index: 3;
+		transition: all 0.2s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+		margin: auto;
+		border-radius: 50%;
+		img{
+			width: 20px;
+			height: 20px;
 		}
 	}
 }
@@ -32,9 +54,17 @@
 //BLOCS VIDEOS
 .elements-video {
 	position: relative;
+	overflow: hidden;
 	.elements-video-container {
 		height: 100%;
-		background-size: cover;
+		.elements-video-bg{
+			height: 100%;
+			background-size: cover;
+			&:hover{
+				transform: scale(1.1);
+				transition: ease all 0.2s;
+			}
+		}
 	}
 	.elements-video-caption {
 		position: absolute;
@@ -108,6 +138,34 @@
 			transform: scale(1.1);
 			transition: ease all 0.2s;
 			}
+		}
+	}
+}
+
+//Hover Effect on video & image elements 
+.elements-video, .elements-image {
+	&:after{
+		position: absolute;
+		top: 30%;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		opacity: 0;
+		content: " ";
+		z-index: 2;
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+		transition: all 0.3s cubic-bezier(0.41, 0.094, 0.54, 0.07) 0s;
+	}
+	&:hover{
+		.image, .elements-video-bg{
+			transform: scale(1.1);
+			transition: ease all 0.2s;
+		}
+		&:after{
+			opacity: 1;
+		}
+		.zoom{
+			transform: scale3d(1, 1, 1);
 		}
 	}
 }
